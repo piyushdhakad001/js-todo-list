@@ -24,10 +24,14 @@ tasksContainer.innerHTML = '';
 
   // create complete button
   const completeButton = document.createElement('button');
-  completeButton.classList.add('buttons', 'complete')
   completeButton.textContent = 'Complete';
 
+
+  // create delete button
+  const deleteButton = document.createElement('button');  
+  deleteButton.textContent = 'Delete';
   
+
   // complete functionality
   completeButton.addEventListener('click', () => {
    taskObj.completed = !taskObj.completed;
@@ -35,6 +39,10 @@ tasksContainer.innerHTML = '';
 
     renderTasks();
   })
+
+  
+
+
 
 
   taskElement.appendChild(task);
