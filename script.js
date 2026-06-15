@@ -40,14 +40,22 @@ tasksContainer.innerHTML = '';
     renderTasks();
   })
 
-  
+  // Delete functionality
+  deleteButton.addEventListener('click', ()=> {
+    taskElement.remove();
+    tasks.splice(index, 1);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    renderTasks();
+  })
 
 
 
 
   taskElement.appendChild(task);
-  taskElement.appendChild(completeButton)
+  taskElement.appendChild(completeButton);
+  taskElement.appendChild(deleteButton);
   tasksContainer.appendChild(taskElement);
+  
 
   })
 }
