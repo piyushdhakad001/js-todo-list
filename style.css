@@ -1,5 +1,128 @@
+body {
+  background: linear-gradient(145deg, #d4d4f5, #bbbce8);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1e1f3b;
+  letter-spacing: -0.03em;
+  /* color: #1e1f3b; */
+  color: #3b3f8c;
+}
+
+.input-add {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+input {
+  background: rgba(255, 255, 255, 0.58);
+  border: none;
+  outline: none;
+  color: #9898c0;
+  border-radius: 3px;
+  font-size: smaller;
+  font-weight: bold;
+  padding: 5px;
+  width: 100%;
+
+
+}
+
+input::placeholder {
+  color: #9898c0;
+  font-weight: 400;
+}
+
+
+.add {
+  border: none;
+  border-radius: 5px;
+  font-size: 8px;
+  font-weight: bold;
+  padding: 5px;
+  margin-left: 5px;
+  background: #3b3f8c;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  padding: 10px 15px;
+}
+
+.complete-button {
+  font-size: 7px;
+  margin: 1px;
+  background: #5a6bcd;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-weight: 700;
+}
+
+.delete-button {
+  background: #fff0f0;
+  color: #c0392b;
+  border: 1.5px solid rgba(192, 57, 43, 0.18);
+   font-size: 7px;
+  margin: 1px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-weight: 700;
+  
+}
+
+
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+
+
+
+  justify-content: space-between;
+}
+
+.task-element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgba(255, 255, 255, 0.58);
+  margin-top: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  color: #2d2f5e;
+
+
+}
+
+.task-paragraph {
+  width: 100%;
+  word-wrap: 100px;
+  word-break: break-all;
+  font-size: smaller;
+  font-weight: lighter;
+  padding-right: 5px;
+  /* border: 1px solid; */
+
+}
+
 .completedTask {
   text-decoration: line-through;
   background: rgba(255, 255, 255, 0.30);
   opacity: 0.50;
 }
+

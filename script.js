@@ -24,10 +24,12 @@ function renderTasks() {
 
     // create complete button
     const completeButton = document.createElement("button");
+    completeButton.classList.toggle('complete-button')
     completeButton.textContent = "Complete";
 
     // create delete button
     const deleteButton = document.createElement("button");
+      deleteButton.classList.toggle('delete-button')
     deleteButton.textContent = "Delete";
 
     // complete functionality
