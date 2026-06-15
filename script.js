@@ -24,13 +24,21 @@ tasksContainer.innerHTML = '';
 
   // create complete button
   const completeButton = document.createElement('button');
+  completeButton.classList.add('buttons', 'complete')
   completeButton.textContent = 'Complete';
 
   
+  // complete functionality
+  completeButton.addEventListener('click', () => {
+   taskObj.completed = !taskObj.completed;
+   task.classList.toggle('completedTask');
+
+    renderTasks();
+  })
 
 
   taskElement.appendChild(task);
-  taskElement.appendChild(completeButton);
+  taskElement.appendChild(completeButton)
   tasksContainer.appendChild(taskElement);
 
   })
