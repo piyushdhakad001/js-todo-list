@@ -126,3 +126,13 @@ input::placeholder {
   opacity: 0.50;
 }
 
+@media (min-width: 400px) {
+  .input-add {
+    width: 400px;
+  }
+
+  .tasks-container {
+    width: 400px;
+
+  }
+}
