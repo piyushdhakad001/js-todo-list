@@ -34,7 +34,6 @@ function renderTasks() {
     completeButton.addEventListener("click", () => {
       taskObj.completed = !taskObj.completed;
       task.classList.add("completedTask");
-      console.log(task.className);
       localStorage.setItem("tasks", JSON.stringify(tasks));
       renderTasks();
     });
