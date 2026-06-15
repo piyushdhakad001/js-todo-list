@@ -3,7 +3,7 @@ const addButton = document.querySelector(".add");
 const tasksContainer = document.querySelector(".tasks-container");
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-// renderTasks();
+renderTasks();
 // Render task start--------------
 
 function renderTasks() {
@@ -36,7 +36,7 @@ function renderTasks() {
       task.classList.add("completedTask");
       console.log(task.className);
       localStorage.setItem("tasks", JSON.stringify(tasks));
-     
+      renderTasks();
     });
 
     // Delete functionality
@@ -44,7 +44,7 @@ function renderTasks() {
       taskElement.remove();
       tasks.splice(index, 1);
       localStorage.setItem("tasks", JSON.stringify(tasks));
-      
+      renderTasks();
     });
 
     taskElement.appendChild(task);
