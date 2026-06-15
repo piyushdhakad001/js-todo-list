@@ -58,7 +58,9 @@ function renderTasks() {
 addButton.addEventListener("click", () => {
   // trim function for removing white space from beginning and end
   const taskText = input.value.trim();
-  
+  if (taskText === "") {
+    return;
+  }
   tasks.push({
     text: taskText,
     completed: false,
